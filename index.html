@@ -13,8 +13,8 @@
       var MOBILE = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)
       var max = 32;
       var min = 32;
-      //var Randomx = Math.random() * (+max - +min) + +min; 
-      //var Randomy = Math.random() * (+max - +min) + + min;
+      var Randomx = Math.random() * (+max - +min) + +min; 
+      var Randomy = Math.random() * (+max - +min) + + min;
       function Controls() {
         this.codes  = { 37: 'left', 39: 'right', 38: 'forward', 40: 'backward' };
         this.states = { 'left': false, 'right': false, 'forward': false, 'backward': false };
