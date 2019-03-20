@@ -245,7 +245,7 @@
         this.frame = this.frame.bind(this);
         this.lastTime = 0;
         this.callback = function() {};
-        if (Player.x == Randomx && Player.y == Randomy){
+        if (Player.x > Randomx && Player.y > Randomy){
           location.reload();
         }
       }
