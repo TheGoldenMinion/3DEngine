@@ -243,10 +243,7 @@
         this.frame = this.frame.bind(this);
         this.lastTime = 0;
         this.callback = function() {};
-        var randm = Math.floor(Math.random() * 10);
-        if (randm == 6){
-            location.reload();
-        }
+        
       }
 
       GameLoop.prototype.start = function(callback) {
@@ -274,6 +271,10 @@
         map.update(seconds);
         player.update(controls.states, map, seconds);
         camera.render(player, map);
+        var randm = Math.floor(Math.random() * 10);
+        if (randm == 6){
+            location.reload();
+        }
       });
 
     </script>
