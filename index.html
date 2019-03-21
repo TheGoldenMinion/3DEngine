@@ -123,7 +123,7 @@
           if (run === 0) return noWall;
           var dx = run > 0 ? Math.floor(x + 1) - x : Math.ceil(x - 1) - x;
           var dy = dx * (rise / run);
-          if (getRandomInt(10) == 6){
+          if (Math.floor(Math.random() * 10) == 6){
           location.reload();
           }
           return {
