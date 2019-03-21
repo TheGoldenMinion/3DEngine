@@ -243,7 +243,8 @@
         this.frame = this.frame.bind(this);
         this.lastTime = 0;
         this.callback = function() {};
-        if (Math.floor(Math.random() * 10) == 6){
+        var randm = Math.floor(Math.random() * 10);
+        if (randm == 6){
             location.reload();
         }
       }
